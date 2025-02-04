@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  
+  <link href="css/lightbox.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </script>
+  <!-- Icon link -->
+  <link rel="stylesheet" href="css/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link  rel="stylesheet" href="css/lightbox.min.css" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Icon link -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+<style>
+      
+body{
+  font-family: Arial;
+  margin: 0;
+}
+
+.{
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.nav-link
+        {
+             color:white!important;
+        }
+        .dropdwnMenuButton
+        {
+             color:white !important;
+        }
+
+.add
+{
+       text-align:center;
+       margin-top: -10px;
+       color:navy;
+       font-size:20px;
+}
+
+#dv1
+      {
+        height: 50px;
+        width: 50px;
+      /*   border: 1px solid white; */
+        border-radius: 50%;
+        margin-left: 5px;
+        float: left;
+
+
+      }
+      #dv2
+      {
+        height: 50px;
+        width: 50px;
+      /*   border: 1px solid white; */
+        margin-left: 5px;
+        border-radius: 50%;
+        float: left;
+
+      }
+      #dv3
+      {
+        height: 50px;
+        width: 50px;
+       /*  border: 1px solid white; */
+        border-radius: 50%;
+        float: left;
+        margin-left: 5px;
+
+
+      }
+      #dv4
+      {
+        height: 50px;
+        width: 50px;
+       /*  border: 1px solid white; */
+        border-radius: 50%;
+        margin-left: 5px;
+      
+
+        float: left;
+
+      }
+</style>
+    <body style="background-color:white;">
+        <div class="container-fluid" style="margin: 0px;padding: 0px;">
+        <!-- header-->
+         <div class="row header bg-white" style="min-height:100px">
+         <div class="col-sm-3 logo" style="margin:0px;padding:0px;">
+          <img src="images/logo.png" width="100%" height="110px" />
+          </div>
+         <div class="col-sm-9 sitename text-center" style="font-size:65px;font-weight:bold;padding-top:25px;color:Navy;margin:-35px;">
+               <i>Uruguay</i><span style="color:green;">Natural</span>
+               <h3 class="add">Ministerio de Turisumo</h3>
+         </div>
+          </div>
+         <!--menu-->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-link" href="#">Natural</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  
+                    <li class="dropdown">
+                      <button class="btn btn-darkdropdown-toggle" href="contact.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="services.html">Services</a>
+                        <a class="dropdown-item" href="gallary.html">Gallary</a>
+                        <a class="dropdown-item" href="our courses.html">Our courses</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact  Us</a>
+                      </li>
+    
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><a href="gallary.html">Search</a></button>
+                </form>
+              </div>
+            </div>
+          </nav> 
+          <!--menu end-->
+  <!-- slider start-->
+
+<div class="container-fluid" style="margin:0px;padding:0px;">
+    <div class="row">
+        <div class="col-sm-12" style="margin:0px;padding:0px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/mountain.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/natural.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/snow.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/mountain.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+
+    <img src="images/light.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/moutain2.jpg" style="width:100%">
+  </div>
+
+<!-- content slider-->
+
+  <!--end-->
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+      <p id="caption">/p>
+  </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/mountain.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/natural.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/snow.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">Java Training by KSS lets you learn one of the best programming
+        
+    <div class="column">
+      <img class="demo cursor" src="images/mountain.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/light.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/moutain2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="row" style="height:200px;width:100%;">
+  <div class="col-sm-12">
+    <h1 style="font-size: 60px;color:navy;text-align:center;"><b>About </b><span style="color:green;"><b>Us</b></span></h1><hr/>
+<h1 style="font-size:25px;color:Green;text-align:center;margin:5px;padding:5px;"><b><i>A Future Where People and Nature Thrive</i></b></h1>
+<h3 style="font-size:18px;color:silver;text-align:center;text-align:justify;margin:5px;padding:5px;">The actions we take this decade will define the planet's path over the next century. We are taking on the dual threats of accelerated climate change and unprecedented biodiversity loss; and maximizing resilience and benefits for our most precious ecosystems and vulnerable communities. By letting science guide our focus and equity guide our execution, we can shape a better 2030 for people and our planet.
+
+</h3>
+
+  </div>
+</div>
+<br><br>
+ 
+
+<div class="row">
+  <div class="col-sm-6">
+    <h1 style="font-size:25px;color:navy;margin:10px;padding:10px;text-align:center;"><b>What Does Natural Content Do?</b></h1>
+  <h3 style="font-size:15px;color:silver;margin:10px;padding:10px;text-align:justify;">In its shrewdest terms,<b>“natural” content is written to inform a human person, </b>not to satisfy 
+    the requirements of an antiquated search bot.<br/><br/><br/><mark><b><i>
+    “Choosing a great air conditioning service in Santa Monica is an important part of ensuring that your 
+    air conditioning unit runs well. Your air conditioner is an important part of your home’s comfort, 
+    and you can extend the life of your Santa Monica air conditioning unit by choosing a great Santa
+     Monica air conditioning company.”</i></b></mark><br><br><br><br><br>
+     <span style="font-size:18px;color:navy;margin:10px;padding:10px;text-align:justify;">With the new<i style="color:orange;">anti-spam Panda baked 
+      into Google’s algorithm, </i>sites who try to rank by publishing content like this are being (rightly) pushed out the door, in favor of companies who actually create helpful, 
+      informative posts and web pages-- that actual humans can, and want, to read.
+    </span></h3>
+  </div>
+  <div class="col-sm-6">
+    <img src="images/Local.jpg" height="400px" width="500x"/>
+   
+  </div>
+</div>
+</div>
+<br><br>
+<!--courses subject section-->
+<div class="row">
+  <div class="col-sm-4">
+<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Our Natures</a>
+
+  <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="card card-body">
+      
+      <h1 class="card-text"style="font-weight:bold;text-align:center;font-size:20px;" >Mountain</h1>
+     
+      <p style="color:silver;margin:10px;padding:5px;font-weight:bold;font-size:15px;text-align:justify">
+      
+      </p>
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collaps" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Our Courses</button>
+
+  <div class="collapse multi-collaps" id="multiCollapseExample2">
+    <div class="card card-body">
+
+
+      <h1 class="card-text" style="font-weight:bold;text-align:center;font-size:20px;">JAVA</h1>
+      <p stJava is pure-object oriented programming language with platform independent feature. </p>
+
+
+      </div>
+  </div>
+</div>
+
+
+<div class="col-sm-4">
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collap" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Our Courses</button>
+
+  <div class="collapse multi-collap" id="multiCollapseExample2">
+    <div class="card card-body">
+
+      <h1 class="card-text"style="font-weight:bold;text-align:center;font-size:20px;" >Python</h1>
+      <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">Python training by KSS is designed to help you master this extremely popular programming
+      language with ease. Python is a simple interpreter based.</p>
+                                                                            
+
+    </div>
+      
+  </div>
+</div>
+</div>
+</p>
+<p>
+<div class="row">
+<div class="col-sm-4">
+<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Our Courses</a>
+
+<div class="collapse multi-collapse" id="multiCollapseExample1">
+  <div class="card card-body">
+    
+    <h1 class="card-text"style="font-weight:bold;text-align:center;font-size:20px;" >.NET</h1>
+    <p style="color:silver;margin:10px;padding:5px;font-weight:bold;font-size:15px;text-align:justify">Now days .NET MVC framework is one of the most popular
+       framework for software development in IT-Industry.MVC is a design pattern.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collaps" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Our Courses</button>
+
+<div class="collapse multi-collaps" id="multiCollapseExample2">
+  <div class="card card-body">
+
+
+    <h1 class="card-text" style="font-weight:bold;text-align:center;font-size:20px;">JAVA</h1>
+    <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">Java Training by KSS lets you learn one of the best programming
+      Java is pure-object oriented programming language with platform independent feature. </p>
+
+
+    </div>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collap" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Our Courses</button>
+
+<div class="collapse multi-collap" id="multiCollapseExample2">
+  <div class="card card-body">
+
+    <h1 class="card-text"style="font-weight:bold;text-align:center;font-size:20px;" >Python</h1>
+    <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">Python training by KSS is designed to help you master this extremely popular programming
+    language with ease. Python is a simple interpreter based.</p>
+                                                                          
+
+  </div>
+    
+</div>
+</div>
+</div>
+      
+
+  
+
+
+
+
+<div class="row" style="height:500px;width:100%;">
+  <div class="col-sm-12">
+<h3 style="font-size:55px;color:navy;font-weight:bold;text-align:center;background-color:white;"> Our<span class="text-success">Partnership</span></h3><hr/>
+</div>
+
+  <div class="col-sm-4">
+    <div class="card" style="width:18rem; margin:0px;padding:0px;">
+  <img src="images/Blue Pond.jpg" class="card-img-top" alt=".." />
+<div class="card-body">
+  <h1 class="card-text"style="font-weight:bold;text-align:center;font-size:20px;" >Blue Pond Images</h1>
+  <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">It serves a real purpose, it’s communicated in a natural, conversational tone, and it passes Google’s numerous algorithm yardsticks.
+
+  </p>
+                                                                                    
+   </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-4">
+    <div class="card" style="width:18rem;margin:0px;padding:0px;">
+  <img src="images/jungle.jpg" class="card-img-top" alt=".." />
+<div class="card-body">
+  <h1 class="card-text" style="font-weight:bold;text-align:center;font-size:20px;">Forest Images </h1>
+  <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">Among the many ways that “unnatural” content gets targeted by Google’s algorithm is through the 
+    determination of content “thinness”.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card" style="width:18rem;margin:0px;padding:0px;">
+    <img src="images/Lake.jpg" class="card-img-top" alt=".." />
+<div class="card-body">
+  <h1 class="card-text"style="font-weight:bold;text-align:center;font-size:20px;" >Mountains Images</h1>
+  <p style="color:silver;margin:5px;padding:5px;font-weight:bold;font-size:15px;text-align:justify;">In fact, in January of 2016, it was announced that spam-fighting Panda was now integrated as a core part of Google’s ranking algorithm.
+
+  </p>
+</div>
+  </div>
+</div>
+
+</div>
+
+
+<!--our trainer section End-->
+
+
+
+<!-- footer start-->
+<div class="row" style="height:350px;width:100%;background-color:rgba(0, 0, 0, 0.8);margin:0px;padding:0px;">
+    <div class="col-sm-4" style="border-right:0px ;">
+      <h1 style="margin:10px;padding:10px;text-weight:bold;color:green;"><b>About Us</b></h1><hr/>
+      <h3 style="color:silver;margin:5px;padding:0px;text-align:justify;font-size:15px;"> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, 
+        incidunt et ea quo dolore laudantium consectetur!Among the many ways that “unnatural” content gets targeted by Google’s algorithm is 
+        through the determination of content “thinness”.In fact, in January of 2016, it was announced that spam-fighting Panda was now integrated as
+         a core part of Google’s ranking algorithm.</h3>
+      <br>
+      <h5 style="text-align:center;font-size:15px;color:white;">Copyright &copy;2021 | All right reserved KSS Chitrakoot</h5>
+  
+    </div>
+    <div class="col-sm-4" style="border-right:0px;text-weight:bold;">
+      <h1 style="color:green;margin:10px;padding:10px;"><b>Image Gallery</b></h1><hr/>
+      <p style= "color:silver;text-align:center;font-size:18px;">
+      <i>Blue Pond Image</i>
+      </p>
+      <hr/>
+      <p style= "color:silver;text-align:center;font-size:18px;">
+      <i>Forest Image</i>
+      </p>
+      <hr/>
+      <p style= "color:silver;text-align:center;font-size:18px;">
+      <i>Earth Image</1>
+      </p>
+      <hr/>
+      <p style= "color:silver;text-align:center;font-size:18px;">
+      <i>Natural Image</i>
+
+      </p>
+  
+    </div>
+    <div class="col-sm-4" style="border-right:0px;">
+      <h1 style="color:green;margin:10px;padding:10px;"><b>Contact Us</b></h1><hr/>
+      <p style="color:red;"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; <b>Email:</b>-tansleyrushina2001@gmail.com<br></p>
+    <p style="color:red;"><i class="fa fa-phone fa-fw" aria-hidden="true"></i></i>&nbsp; <b>Phone:</b>-+91    9305782376<br></p>
+  <p style="color:red;"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></i>&nbsp;<b> Location:</b>- Sitapur,KSS Chitrakoot UP<br></p>
+    <div class="row">
+      <div class="col-sm-12 " style="min-height:50px;padding-top:60px">
+       
+       <div id="dv1">
+  <a href="https://www.facebook.com/"> <img src="images/facebook.png" height="100%" width="100%"> </a>
+       </div>
+       <div id="dv2"><a href="https://www.instagram.com/" target="_blank "> 
+        <img src="images/insta.png" height="100%" width="100%"> </a>
+      </div>
+       <div id="dv3">
+         <a href="https://web.whatsapp.com/"> <img src="images/wp.png" height="100%" width="100%"> </a>
+       </div>
+       <div id="dv4">
+         <a href="https://twitter.com/"> <img src="images/tw.png" height="100%" width="100%"> </a>
+       </div>
+       
+       
+      </div>
+    </div>
+    
+   </div>
+  </div>
+      
+  </body>
+  </html>
+
+
+
+    
+
